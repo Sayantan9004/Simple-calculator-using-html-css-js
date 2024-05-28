@@ -11,7 +11,7 @@
     <div class="calculator">
         <form>
             <div class="display">
-               <input type="text" name="diplay"> 
+               <input type="text" name="diplay" id="displayScreen"> 
             </div>
             <div>
                <input type="button" value="AC" onclick="diplay.value = '' " class="operator">
@@ -40,11 +40,12 @@
              <div>
                 <input type="button" value="00" onclick="diplay.value += '00' ">
                 <input type="button" value="0" onclick="diplay.value += '0' ">
-                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
-             </div>
+                <input type="button" value="=" class="equal" id="result">
+            </div>
         </form>
     </div>
 </div>
+<script src="calculator1.js"></script>
 </body>
 </html>
   
